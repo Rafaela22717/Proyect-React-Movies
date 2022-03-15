@@ -2,7 +2,7 @@ import React from 'react';
 import {useEffect, useState} from "react" 
 import { Link, Redirect} from "react-router-dom";
 import axios from "axios";
-
+import sweetAlert from '@sweetalert/with-react';  
 
 function Listado() {
  
@@ -20,6 +20,9 @@ function Listado() {
       const apiData=response.data;//paso esta info a un estado de react useState
       console.log(apiData);
       setMoviesList(apiData.results);
+    })
+    .catch(error=> {
+      sweetAlert("Error, intenta mas tarde");
     })
 
    },[setMoviesList]); 
