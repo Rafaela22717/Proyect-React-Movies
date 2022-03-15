@@ -1,15 +1,18 @@
+import React from 'react';
 import axios from "axios";
 import sweetAlert from '@sweetalert/with-react';//importo libreria de alert
+import { useHistory, Redirect } from "react-router-dom";
 
-function Login() {
-
-    sweetAlert(
-        <h2>Esto va a funcionar</h2>
-    )
 
 
 
-const submitHandler= e=> {
+function Login() {
+          
+   
+  const history = useHistory();
+
+
+  const submitHandler= e=> {
     e.preventDefault();//evita que la pagina se refresque
     const email= e.target.email.value;//captura los valores de los campos
     const password= e.target.password.value;
@@ -35,7 +38,7 @@ const submitHandler= e=> {
     //validacion de la info q se puso//si es lo q yo estoy esperando
     if(email !== "challenge@alkemy.org" || password !== "react") {
         sweetAlert(
-            <h2>Las redenciales son invalidas</h2>
+            <h2>Las credenciales son invalidas</h2>
         )
         return;
     }
@@ -48,10 +51,17 @@ const submitHandler= e=> {
         <h2>Ingresaste correctamente</h2>
     )
        console.log(res.data);
+       const tokenRecibido = res.data.token; 
+       //guardo el token en el local storage(almacenam local)
+       localStorage.setItem("token", tokenRecibido)
+       history.push("/listado");
    })
 }
+let token= localStorage.getItem("token")
+
     return (
         <>
+        {token && <Redirect to="/listado"/>}
            <h2>Formulario de login</h2>
             <form onSubmit={submitHandler}>
                 <label>
