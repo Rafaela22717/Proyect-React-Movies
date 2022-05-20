@@ -11,7 +11,7 @@ function Search(props, movie) {
         //validacion:
         if (keyword.length === 0) {
             sweetAlert({
-                title: "Ingrese un nombre",
+                title: "Enter a name",
                 icon: "info",
                 button: false,
                 className: "sweet",
@@ -19,7 +19,7 @@ function Search(props, movie) {
             });
         } else if (keyword.length < 3) {
             sweetAlert({
-                title: "Ingrese mas caracteres",
+                title: "Enter more characters",
                 icon: "error",
                 button: false,
                 className: "sweetA",
