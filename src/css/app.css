@@ -3,7 +3,6 @@ body {
      background-repeat: no-repeat;
     
 }
-
 .favourite-btn {
 width: 30px;
 height: 30px;
@@ -18,27 +17,20 @@ top: 10px;
 border: none;
 font-size: 13px;
 }
-.btn {
-   border: none;
-   background: rgb(83, 82, 82);
-}
 .text {
     margin-right: 2px;
     color: brown;
     margin-left: 50px;
     margin-top: 1.7px;
 }
-
 .card-personaliz {
-    height: 620px;
+    height: 612px;
     background: rgb(164, 160, 168);
-}
-
-  
+} 
 .titulo {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 65px;
-   
+    font-size: 50px;
+    font-weight:600;
     margin-right: 25px;
     margin-top: 5px;
     color: rgb(127, 104, 156);
@@ -86,7 +78,72 @@ button {
 }
 .card-textE{
     height: 620px; 
+    background: rgb(164, 160, 168);
 }
 .card-textF{
-    height: 700px; 
+    height: 510px; 
+    background: rgb(164, 160, 168);
 }
+.sweet{
+    width: 300px;
+    height: 200px;
+}
+.sweetA{
+    width: 300px;
+    height: 250px; 
+}
+.btn{
+    width: 5em;
+    height: 2em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #928a8a;
+   }
+   
+   .btn::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #7f6a8e 0%, #d2cdd9 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .btn:hover::before {
+    width: 9em;
+   }
+   .favourite-btn:hover { 
+    padding: 17px; 
+    background: rgb(185, 4, 4); 
+    color: rgb(189, 9, 9); 
+  } 
+  .favourite-btn1 {
+    width: 30px;
+    height: 30px;
+    background-color: #a5a1a1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    font-size: 13px;
+    }
+    .favourite-btn1:hover { 
+        padding: 17px; 
+        background: rgb(7, 6, 6); 
+        color: rgb(189, 9, 9); 
+      } 
