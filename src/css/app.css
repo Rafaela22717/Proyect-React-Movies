@@ -1,0 +1,92 @@
+body {
+    background-image: url(" https://img.freepik.com/vector-gratis/tira-pelicula-realsitic-sobre-fondo-negro_1017-33462.jpg?t=st=1648621540~exp=1648622140~hmac=1b45eca7b5ef47383e13fefd0400b48d9a829202120937c2d77b348aa5c34bfd&w=900"); background-size:cover;
+     background-repeat: no-repeat;
+    
+}
+
+.favourite-btn {
+width: 30px;
+height: 30px;
+background-color: #a5a1a1;
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+right: 10px;
+top: 10px;
+border: none;
+font-size: 13px;
+}
+.btn {
+   border: none;
+   background: rgb(83, 82, 82);
+}
+.text {
+    margin-right: 2px;
+    color: brown;
+    margin-left: 50px;
+    margin-top: 1.7px;
+}
+
+.card-personaliz {
+    height: 620px;
+    background: rgb(164, 160, 168);
+}
+
+  
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 65px;
+   
+    margin-right: 25px;
+    margin-top: 5px;
+    color: rgb(127, 104, 156);
+  text-shadow: #555 8px 6px 8px;
+}
+.colorDetalle {
+    color: rgb(164, 160, 168);
+}
+button {
+    --glow-color: rgb(180, 162, 193);
+    --glow-spread-color: rgba(36, 32, 40, 0.781);
+    --enhanced-glow-color: rgb(83, 78, 88);
+    --btn-color: rgb(29, 27, 31);
+    border: .20em solid var(--glow-color);
+    padding: 0em 1em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 7em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-left: 40px;
+    margin-top: 10px;
+   }
+  .footer{
+     margin-top: 250px;
+      color: rgb(164, 160, 168);
+  }
+.labelOne{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.buttonS{
+    margin-top: auto;
+}
+.card-textD{
+    background: rgb(164, 160, 168);
+
+}
+.card-textE{
+    height: 620px; 
+}
+.card-textF{
+    height: 700px; 
+}
